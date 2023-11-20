@@ -110,7 +110,7 @@ useEffect(() => {
   
   return (
     <main className=" bg-blue-200 h-full flex flex-col border-none"> 
-          <div className='grid grid-cols-2 grid-rows-3 h-full border-none'>
+          <div className='grid grid-cols-2 grid-rows-3 border-none h-[100%]  overflow-auto min-w-[938px]'>
               <div className='row-span-2 '>
                 <div className=' flex flex-col border-8 border-gray-200 rounded-sm  m-1 h-full'>
                   <div className='w-full h-12 flex flex-col mt-1 '>

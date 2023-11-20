@@ -40,8 +40,8 @@ const Misdata = async(props: Props) => {
             <div className='flex flex-col'>
               <p>{contract?.stroke_id}</p>
               <p>{contract?.tdept}</p>
-              <p>{contract?.createdAt.toISOString()}</p>
-              <p>{contract?.updatedAt.toISOString()}</p>
+              <p>{contract?.createdAt.toUTCString()}</p>
+              <p>{contract?.updatedAt.toUTCString()}</p>
             </div>
           </div>
         </div>

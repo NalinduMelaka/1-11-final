@@ -18,7 +18,7 @@ const Signupfrom = () => {
   }
 
   return (
-    <div className='flex flex-col gap-4 bg-gray-100 p-4 max-w-md mx-auto m-10'>
+    <div className='flex flex-col gap-8 bg-gray-100 p-4 max-w-md mx-auto m-10 rounded-md'>
         <input type='text' placeholder="Username" value={email} onChange={(e) => setEmail(e.target.value)} className='p-2 rounded border border-gray-300'/>
         <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} className='p-2 rounded border border-gray-300'/>
         
