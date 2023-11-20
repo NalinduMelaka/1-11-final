@@ -32,10 +32,12 @@ function Adoughnut({contract,care,other,quntity}: Props){
       backgroundColor: [
         'rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'],
+      'rgb(255, 205, 86)',
+    'rgb(55, 52, 235)'],
       borderColor: ['rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'],
+      'rgb(255, 205, 86)',
+    'rgb(55, 52, 235)'],
       hoverOffset: 4
     }]
   }
