@@ -8,7 +8,7 @@ const Care = (props: Props) => {
   return (
     <div className='overflow-auto w-full'>
     <table className="border-collapse border border-slate-500 text-xs bg-white relative font-mono">
-      <thead className='sticky top-0'>
+      <thead className='sticky top-[-1px]'>
         <tr>
           <th className=' border z-10 bg-white border-black  w-40'>Ref No</th>
           <th className=' border z-10 bg-white border-black  w-40'>Wash Symbol</th>

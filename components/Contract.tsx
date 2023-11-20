@@ -11,9 +11,9 @@ const Contract = ()  => {
   
  
   return (
-    <div className='overflow-auto w-full'>
-      <table className="border-colapse relative  border border-slate-500 text-xs bg-white font-mono w-full border-spacing-0">
-        <thead className='sticky top-0 bg-white'>
+    <div className='overflow-auto w-full relative'>
+      <table className="border-collapse relative border border-slate-500 text-xs bg-white font-mono w-full border-spacing-0">
+        <thead className='sticky top-[-1px] bg-white'>
         <tr >
           <th className=' border z-10 bg-white border-black  w-40 '></th>
           <th className=' border z-10 bg-white border-black  w-40 '>StrokeNO</th>

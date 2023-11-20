@@ -29,17 +29,6 @@ const routes = [
     href: '/protected/inputdata',
   },
   {
-    label: 'Settings',
-    icon: Settings,
-    color: "text-indigo-400",
-    href: '/protected/settings',
-  },{
-    label: 'pdf',
-    icon: FileBarChart,
-    color: "text-red-500",
-    href: '/protected/pdffiles'
-  },
-  {
     label: 'MIS report',
     icon: FormInput,
     color: "text-rose-600",

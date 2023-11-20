@@ -44,7 +44,7 @@ const Userinputforcare = (props: Props) => {
     <tr>
       <td className='border border-black'><input type='text' className='w-40 border bg-white ' value={refno} onChange={(e) => setRefno(e.target.value)}/></td>
       <td className='border border-black'><input type='text' className='w-40 border bg-white ' value={washsymbol} onChange={(e) => setWashsymbol(e.target.value)}/></td>
-      <td className='border border-black'><input type='text' className='w-28 border bg-white ' value={fibre} onChange={(e) => setFibre(e.target.value)}/></td>
+      <td className='border border-black'><input type='text' className='w-34 border bg-white ' value={fibre} onChange={(e) => setFibre(e.target.value)}/></td>
       <td className='border border-black'><input type='text' className='w-32 border bg-white ' value={zoordes} onChange={(e) => setZoordes(e.target.value)}/></td>
       <td className='border border-black'><input type='text' className='w-32 border bg-white ' value={mpart} onChange={(e) => setMpart(e.target.value)}/></td>
       <td className='border border-black'><input type='text' className='w-40 border bg-white ' value={coo} onChange={(e) => setCoo(e.target.value)}/></td>

@@ -1,4 +1,4 @@
-'use server'
+
 import Mobilesidebar from './Mobile-sidebar'
 import Link from 'next/link'
 import { Search } from 'lucide-react'
@@ -24,15 +24,15 @@ const Mainnavbar = async () => {
   
   
   return (
-    <div className='flex justify-between  bg-[#ADC4CE] text-white h-[9vh]'>
+    <div className='w-full max-w-screen-xl  flex justify-between items-center bg-[#ADC4CE] text-white h-[9vh]'>
       <Mobilesidebar apiLimitCount={0} isPro={false}/>
-      <div className='my-auto mr-2 text-sm'>
+      <div className=' mr-2 text-sm w-full flex justify-end'>
         {session && session.user?.email ? (
             <DropdownMenu>
                 <DropdownMenuTrigger  asChild>
                   <Button variant="ghost" className="relative h-8 w-8 rounded-full" >
                         <Avatar>
-                          <AvatarImage src="https://github.com/shadcn.png" alt='user' />
+                          <AvatarImage src="/124599.jpeg" alt='user' />
                           <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
                     </Button>

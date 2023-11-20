@@ -27,7 +27,7 @@ const Navbar = (props: Props) => {
       <DropdownMenuTrigger  asChild>
          <Button variant="ghost" className="relative h-8 w-8 rounded-full" >
               <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt='user' />
+                <AvatarImage src="/124599.jpeg" alt='user' />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
           </Button>

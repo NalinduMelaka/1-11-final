@@ -42,13 +42,13 @@ const Userinputforquntity = (props: Props) => {
   return (
     <tr>
       <td className='w-14 border border-black'></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setColorcode(e.target.value)} value={colorcode} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setColorname(e.target.value)} value={colorname} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setUpcno(e.target.value)} value={upcno} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setPrimarysize(e.target.value)} value={primarysize} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setSecondarysize(e.target.value)} value={secondarysize} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='number'onChange={(e) => setSellingprice(Number(e.target.value))} value={sellingprice} className='w-20 bg-white'/></td>
-      <td className='border border-black'><input type='text'onChange={(e) => setOrderqty(e.target.value)} value={orderqty} className='w-20 bg-white' onKeyPress={handleenterpress}/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setColorcode(e.target.value)} value={colorcode} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setColorname(e.target.value)} value={colorname} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setUpcno(e.target.value)} value={upcno} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setPrimarysize(e.target.value)} value={primarysize} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setSecondarysize(e.target.value)} value={secondarysize} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='number'onChange={(e) => setSellingprice(Number(e.target.value))} value={sellingprice} className='w-full bg-white'/></td>
+      <td className='border border-black'><input type='text'onChange={(e) => setOrderqty(e.target.value)} value={orderqty} className='w-full bg-white' onKeyPress={handleenterpress}/></td>
     </tr>
   )
 }

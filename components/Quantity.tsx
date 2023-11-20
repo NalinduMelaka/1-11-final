@@ -8,7 +8,7 @@ const Quantity = (props: Props) => {
   return (
     <div className='overflow-auto w-full'>
     <table className="border-collapse border border-slate-500 text-xs bg-white font-mono">
-      <thead className='sticky top-0 border bg-white z-10'>
+      <thead className='sticky  border top-[-1px] bg-white z-10'>
         <tr>
           <th className='border border-black  w-40'></th>
           <th className='border border-black  w-40'>Color Code</th>
