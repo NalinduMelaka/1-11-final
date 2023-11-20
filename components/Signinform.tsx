@@ -44,7 +44,7 @@ useEffect(() => {
       router.refresh();
       router.push('/protected/dashbord');
   }
-}, [status]);
+}, [router, status]);
 
 
 
