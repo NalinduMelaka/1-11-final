@@ -1,3 +1,4 @@
+import MISinterface from "@/components/MISinterface"
 import Mainnavbar from "@/components/Mainnavbar"
 import Misreport from "@/components/Misreport"
 
@@ -10,6 +11,7 @@ const page = async (props: Props) => {
     <div className="h-full ">
       <Mainnavbar />
       <Misreport />
+      <MISinterface />
     
     </div>
   )
