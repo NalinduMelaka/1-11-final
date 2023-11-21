@@ -12,7 +12,6 @@ const Misreport =  async() => {
         const dresponse = await getTotalCountBydepartmentnumber();
         const supresponse = await getTotalCountBysupplierseries();
 
-
         
  
   return (
