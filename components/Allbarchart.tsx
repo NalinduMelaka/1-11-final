@@ -1,3 +1,4 @@
+/*
 'use client'
 import React from 'react'
 import { Line } from 'react-chartjs-2';
@@ -26,7 +27,7 @@ ChartJS.register(
   Legend
 );
 
-type MonthlyData = { month: number; count: number }[]; 
+type MonthlyData = { [key: number]: number }; 
 
 interface Props {
   contractdata: MonthlyData[]
@@ -55,22 +56,22 @@ export const options = {
 
 
 const Allbarchart = (props: Props) => {
+  
 
   const { contractdata, caredata, otherdata, quntitydata } = props;
 
-  const getCountForMonth = (data: MonthlyData[], month: number): number => {
-    const monthData = data.find(item => item.month === month);
-    return monthData ? monthData.count : 0;
+  const getContractCountsAsArray = (data: MonthlyData): number[] => {
+    return Object.values(data); // Extracts the values as an array
   };
-  
-  const contractCounts = labels.map((_, index) => getCountForMonth(contractdata, index + 1));
+
+  const countractnumbers = getContractCountsAsArray(contractdata);
 
   const data = {
     labels,
     datasets: [
       {
         label: 'Contracts',
-        data: contractdata.map((contract) => contract.count ),
+        data: countractnumbers,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
@@ -89,3 +90,5 @@ const Allbarchart = (props: Props) => {
 }
 
 export default Allbarchart
+
+*/

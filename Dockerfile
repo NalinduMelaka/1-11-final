@@ -2,14 +2,13 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package.json ./
-
-RUN npm install 
-
 COPY . .
+
+RUN npm install --production
 
 RUN npm run build
 
-COPY .next ./.next
+EXPOSE 80
 
-CMD ["npm","run","dev"]
+CMD ["npm","start"]
+

@@ -9,7 +9,7 @@ import { groupbycontractmonth, groupbyothermonth, groupbyquantitymonth } from '@
 
 type Props = {}
 
-type MonthlyData = { month: number; count: number }[]; 
+type MonthlyData = { [key: number]: number }; 
 
 const MISinterface = (props: Props) => {
 
@@ -17,10 +17,10 @@ const MISinterface = (props: Props) => {
   const [care, setCare] = useState<number>(0);
   const [other, setOther] = useState<number>(0);
   const [quntity, setQuntity] = useState<number>(0);
-  const [contractMonths, setContractMonths] = useState<MonthlyData>([]);
-  const [careMonths, setCareMonths] = useState<MonthlyData>([]);
-  const [otherMonths, setOtherMonths] = useState<MonthlyData>([]);
-  const [quantityMonths, setQuantityMonths] = useState<MonthlyData>([]);
+  const [contractMonths, setContractMonths] = useState<MonthlyData>({});
+  const [careMonths, setCareMonths] = useState<MonthlyData>({});
+  const [otherMonths, setOtherMonths] = useState<MonthlyData>({});
+  const [quantityMonths, setQuantityMonths] = useState<MonthlyData>({});
   
 
   useEffect(() => {
